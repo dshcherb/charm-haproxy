@@ -1,0 +1,11 @@
+{% for listen_proxy in listen_proxies -%}
+{% if listen_proxy.server_options -%}
+listen {{ listen_proxy.section_name }}
+{% for listen_option in listen_proxy.listen_options -%}
+    {{ listen_option }}
+{% endfor %}
+{% for server_option in listen_proxy.server_options -%}
+    {{ server_option }}
+{% endfor %}
+{% endif %}
+{% endfor %}

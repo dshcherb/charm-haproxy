@@ -1,0 +1,5 @@
+options:
+    maxconn:
+        type: int
+        description: The maximum per-process number of concurrent connections.
+        default: 4096
