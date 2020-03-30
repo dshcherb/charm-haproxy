@@ -12,7 +12,7 @@ from ops.testing import Harness
 from unittest.mock import patch, call
 
 
-class TestTestingModelBackend(unittest.TestCase):
+class TestHaproxyCharm(unittest.TestCase):
 
     @patch('pathlib.Path.write_text')
     @patch('subprocess.check_call')
