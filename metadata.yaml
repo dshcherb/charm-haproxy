@@ -5,15 +5,17 @@ maintainers: [Dmitrii Shcherbakov <dmitrii.shshcerbakov@canonical.com>]
 description: A Reliable, High Performance TCP/HTTP Load Balancer.
 tags: ["cache-proxy"]
 series:
-  - bionic
-  - focal
+    - bionic
+    - focal
 requires:
-  proxy-listen-tcp:
-    interface: proxy-listen-tcp
+    proxy-listen-tcp:
+        interface: proxy-listen-tcp
 provides:
-  website:
-    interface: http
+    website:
+        interface: http
+    vrrp-parameters:
+        interface: vrrp-parameters
 peers:
-  peer:
-    interface: haproxy-peer
+    peer:
+        interface: haproxy-peer
 

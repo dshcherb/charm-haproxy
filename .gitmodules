@@ -7,3 +7,6 @@
 [submodule "mod/ops-interface-proxy-listen-tcp"]
 	path = mod/ops-interface-proxy-listen-tcp
 	url = https://github.com/dshcherb/ops-interface-proxy-listen-tcp
+[submodule "mod/ops-interface-vrrp-parameters"]
+	path = mod/ops-interface-vrrp-parameters
+	url = https://github.com/dshcherb/ops-interface-vrrp-parameters
